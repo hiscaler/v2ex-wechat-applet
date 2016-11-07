@@ -20,7 +20,6 @@ Page({
   getHots: function () {
     var _this = this;
     requests.requestHots({}, (data) => {
-      console.info
       _this.setData({ topics: data });
     }, () => {
       _this.setData({ topics: [] });
@@ -31,7 +30,6 @@ Page({
   getLatest: function () {
     var _this = this;
     requests.requestLatest({}, (data) => {
-      console.info
       _this.setData({ topics: data });
     }, () => {
       _this.setData({ topics: [] });
