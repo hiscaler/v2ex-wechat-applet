@@ -23,10 +23,10 @@
     </view>
   </view>
 
-  <view class="list">
+  <view class="topics-list ">
     <view wx:for="{{topics}}" class="item">
-      <view class="title">标题：{{item.title}}</view>
-      <view class="content">内容：{{item.content}}</view>
+      <text class="title" data-id="{{item.id}}" bindtap="toDetailPage">标题：{{item.title}}</text>
+      <text class="content">内容：{{item.content}}</text>
     </view>
   </view>
 

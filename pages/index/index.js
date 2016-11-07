@@ -39,6 +39,13 @@ Page({
       console.info('Call completed.');
     });
   },
+  // 查看详情
+  toDetailPage: function (e) {
+    var id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../detail/detail?id=' + id
+    });
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this

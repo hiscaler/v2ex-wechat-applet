@@ -42,20 +42,20 @@
     flex: 1;
 }
 
-.list {
+.topics-list {
   width: 300px;
   padding: 0 10px;
   margin: 0 auto;
 }
-.item {
+.topics-list .item {
   border-bottom: #ccc solid 1px;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.item .title {
+.topics-list .item .title {
   font-weight: bold;
 }
-.item .content {
+.topics-list .item .content {
   line-height: 24x;
   height: 96px;
   overflow: hidden;

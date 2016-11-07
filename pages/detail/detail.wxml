@@ -1,0 +1,10 @@
+<view class="topic-detail">
+    <text class="title">
+        {{topicData.title}}
+        回复次数：{{topicData.replies}} 次
+        创建时间：{{topicData.created}}
+    </text>
+    <text class="content">
+        {{topicData.content_rendered}}
+    </text>
+</view>

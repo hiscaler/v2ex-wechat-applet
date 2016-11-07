@@ -41,8 +41,13 @@ function requestLatest(data, successCb, errorCb, completeCb) {
     request(api.API_LATEST, data, successCb, errorCb, completeCb);
 }
 
+function requestTopicDetail(id, successCb, errorCb, completeCb) {
+    request(api.API_TOPIC_DETAIL.replace(':id', id), {}, successCb, errorCb, completeCb);
+}
+
 module.exports = {
     requestNodes: requestNodes,
     requestHots: requestHots,
-    requestLatest: requestLatest
+    requestLatest: requestLatest,
+    requestTopicDetail: requestTopicDetail
 }
