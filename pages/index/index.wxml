@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+
+  <view class="section">
+    <view class="title">
+      V2EX
+    </view>
+    <view class="flex-wrp">
+      <view class="flex-item">
+        <button type="default" size="mini" plain="true" bindtap="getHots" hover-class="other-button-hover">最热主题</button>
+      </view>
+      <view class="flex-item">
+        <button type="default" size="mini" plain="true" bindtap="getLatest" hover-class="other-button-hover">最新主题</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="list">
+    <view wx:for="{{topics}}" class="item">
+      <view class="title">标题：{{item.title}}</view>
+      <view class="content">内容：{{item.content}}</view>
+    </view>
+  </view>
+
+</view>

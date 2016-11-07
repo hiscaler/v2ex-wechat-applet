@@ -1,0 +1,63 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+
+// Section
+.section {
+  display:flex;
+  width: 100%;
+}
+.section .title {
+  font-weight: bold;
+  font-size: 80rpx;
+}
+.section .flex-column {  
+    padding: 5px;  
+    width: 80px;  
+    height: 80px;  
+    margin: 5px;  
+    line-height: 80px;  
+    color: white;  
+    font-weight: bold;  
+    font-size: 2em;  
+    text-align: center;
+    flex: 1;
+}
+
+.list {
+  width: 300px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.item {
+  border-bottom: #ccc solid 1px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.item .title {
+  font-weight: bold;
+}
+.item .content {
+  line-height: 24x;
+  height: 96px;
+  overflow: hidden;
+  color: #CCC;
+}
