@@ -1,5 +1,4 @@
-var requests = require('../../utils/request.js'),
-    utils = require('../../utils/util.js');
+var requests = require('../../utils/request.js');
 
 Page({
     data: {
@@ -16,12 +15,12 @@ Page({
         requests.requestTopicDetail(
             _this.data.id,
             (data) => {
-                console.info(data);
                 _this.setData({
                     topicData: data[0]
                 });
             }, () => {
                 wx.navigateBack();
-            }, () => { });
+            }, () => { }
+        );
     }
 })

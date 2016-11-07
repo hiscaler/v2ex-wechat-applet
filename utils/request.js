@@ -1,5 +1,5 @@
 var api = require('./api.js');
-var utils = require('./util.js');
+var util = require('./util.js');
 
 function request(url, data, successCb, errorCb, completeCb) {
     wx.request({
@@ -8,14 +8,14 @@ function request(url, data, successCb, errorCb, completeCb) {
         data: data,
         success: function (res) {
             if (res.statusCode == 200) {
-                utils.isFunction(successCb) && successCb(res.data);
+                util.isFunction(successCb) && successCb(res.data);
             }
         },
         error: function () {
-            utils.isFunction(errorCb) && errorCb;
+            util.isFunction(errorCb) && errorCb;
         },
         complete: function () {
-            utils.isFunction(completeCb) && completeCb();
+            util.isFunction(completeCb) && completeCb();
         }
     });
 }
